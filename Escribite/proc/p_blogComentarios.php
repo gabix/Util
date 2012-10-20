@@ -52,7 +52,7 @@ if (Session::get('entradaActiva')) {
 
             $txt = null;
             if (BlogEntrada::Validar('txt', $_POST['txt'])) {
-                $txt = BlogEntrada::ElimiarScriptsDeStr($_POST['txt']);
+                $txt = BlogEntrada::EliminarScriptsDeStr($_POST['txt']);
             } else {
                 Debuguie::AddMsg("p_blogComentarios", "txt inválido", "warning");
                 die("Pedido invalido");

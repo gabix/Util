@@ -1,5 +1,4 @@
-<?php
-$entry = array (
+<?php $entry = array (
   0 => 
   array (
     'comId' => 1,
@@ -56,5 +55,4 @@ $entry = array (
     'time' => 1350201545,
     'txt' => '<p>Me comento la vida de color de rosa</p>',
   ),
-)
-?>
+);

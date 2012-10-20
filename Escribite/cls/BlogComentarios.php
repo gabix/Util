@@ -8,14 +8,14 @@ class BlogComentarios {
     public function __construct($nomEntrada, $pag = 1) {
         Debuguie::AddMsg("BlogComentarios - __construct()", "", "info");
 
-        $this->cPagRuta = $ruta = Loader::LoadObjectPath("pags_blog", $nomEntrada, "php", "c$pag");
+        $this->cPagRuta = $ruta = Loader::LoadObjectPath("Escribite_pags_blog", $nomEntrada, "php", "c$pag");
         $this->file = new SuperFile($ruta);
 
         $this->LlenarComentarios();
     }
 
     private function LlenarComentarios() {
-        $comentarios = $this->file->get();
+        $comentarios = $this->file->get(false);
 
         if (count($comentarios) > 0) {
             Debuguie::AddMsg("BlogComentarios - LlenarComentarios()", "entré", "info");

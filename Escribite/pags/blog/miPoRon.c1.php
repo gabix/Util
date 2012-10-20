@@ -1,5 +1,4 @@
-<?php
-$entry = array (
+<?php $entry = array (
   0 => 
   array (
     'comId' => 1,
@@ -101,5 +100,12 @@ alert("caca");
 <p>&nbsp;&nbsp;</p>
 <p>&nbsp;a</p>',
   ),
-)
-?>
+  10 => 
+  array (
+    'comId' => 11,
+    'visible' => 1,
+    'usuId' => 1,
+    'time' => 1350723995,
+    'txt' => '<p>me comento todo todo todito!</p>',
+  ),
+);

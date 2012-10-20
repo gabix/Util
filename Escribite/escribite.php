@@ -35,9 +35,9 @@ if (isset($_GET['editar']) && $_GET['editar'] == "true") {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <?= "<title>$pagTitle</title>\n" ?>
-        <link rel="stylesheet" type="text/css" href="othersLib/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../othersLib/bootstrap.css" />
         <style>
-            .titti {
+            .titty {
                 text-align: center;
                 color: #006dcc;
             }
@@ -66,7 +66,7 @@ if (isset($_GET['editar']) && $_GET['editar'] == "true") {
     </head>
     <body>
         <div class="supCont">
-            <h1 class="titti"><?= $pagTitle ?></h1>
+            <h1 class="titty"><?= $pagTitle ?></h1>
             <hr />
             
             <form id="f_escribite" method="post" action="proc/p_blogEntrada.php">
@@ -108,8 +108,8 @@ if (isset($_GET['editar']) && $_GET['editar'] == "true") {
         </div>
         <?= ((DEBUGUEANDO) ? Debuguie::PrintMsgs() : "") ?>
 
-        <script type="text/javascript" src="othersLib/jquery.min.js"></script>
-        <script type="text/javascript" src="othersLib/tiny_mce/tiny_mce.js"></script>
+        <script type="text/javascript" src="../othersLib/jquery.min.js"></script>
+        <script type="text/javascript" src="../othersLib/tiny_mce/tiny_mce.js"></script>
         <script type="text/javascript">
             tinyMCE.init({
                 mode : "textareas",

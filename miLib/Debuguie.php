@@ -79,7 +79,7 @@ class Debuguie {
         $debMsg = end($this->debuguieMsgs);
 
         if ($debMsg['tipoDeError'] == "error" || ($debMsg['tipoDeError'] == "warning")) {
-            trigger_error($debMsg['tipoDeError'] . ": en ".$debMsg['donde'] . " | " . $debMsg['msg']);
+            trigger_error("<b>".$debMsg['tipoDeError']."</b>: en ".$debMsg['donde']." | ".$debMsg['msg']);
         }
 
         if (GENERARLOG) {

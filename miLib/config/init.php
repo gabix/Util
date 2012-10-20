@@ -14,6 +14,7 @@ Loader::addLookupDirectory(APP_ROOT.DS.'othersLib');
 
 // pa Escribite
 Loader::addLookupDirectory(APP_ROOT.DS.'Escribite'.DS.'cls');
+Loader::addLookupDirectory(APP_ROOT.DS.'Escribite'.DS.'pags');
 // <editor-fold desc="CONSTANTES">
 
 require_once 'localhost.php';

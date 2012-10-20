@@ -33,6 +33,7 @@ class BlogEntradas {
                     Session::set('entradaActiva', $entrada);
                 }
                 $entradas[] = $entrada;
+                Debuguie::AddMsg("BlogEntradas - LlenarDesdeDB_entradas()", "Cargada end(entradas): id:" . end($entradas)->get('id') . " | nom: " . end($entradas)->get('nombre'), "success");
             }
             
             Debuguie::AddMsg("BlogEntradas - LlenarDesdeDB_entradas()", "", "success");
@@ -48,11 +49,10 @@ class BlogEntradas {
         return $ret;
     }
     
-    public function ValidarEntradaXnombre($nombre) {
+    public function TraerEntradaXnombre($nombre) {
         if (BlogEntrada::Validar("nombre", $nombre) != 1) {
             //no es un nom válido
             return false;
-            exit();
         }
         
         foreach ($this->entradas as $entrada) {
