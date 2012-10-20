@@ -198,7 +198,7 @@ $pagTitle = "booTw";
                 app += '  <div class="input-prepend input-append">';
                 app += '   <span class="add-on"><i class="'+cls+'"></i></span>';
                 app += '   <input class="span2" type="text" value="'+cls.replace('icon-', '')+'" />';
-                app += '   <a id="btn_'+cls+'" class="btn" href="#"><i class="icon-circle-arrow-right"></i></a>'
+                app += '   <a id="btn_'+cls+'" class="btn" href="#"><i class="icon-circle-arrow-right"></i></a>';
                 app += '</div></div></div>';
                 
                 $('#sel').append(app);

@@ -72,8 +72,8 @@ if((isset($_POST["tessto"])) != "") {
 		<textarea name="tessto" cols="80" rows="20"><?php echo($tessto); ?></textarea>
 		<br />
 
-		<input type="checkbox" name="p" value="p" size="25px">Con &lt;p&gt;</input>
-		<input type="submit" value="convertime" name="convertime" style="margin: 0px 0px 0px 50px;" />
+        <label><input type="checkbox" name="p" value="p" size="25px" />Con &lt;p&gt;</label>
+		<input type="submit" value="convertime" name="convertime" style="margin: 0 0 0 50px;" />
 	</form>
 
 	<hr />
