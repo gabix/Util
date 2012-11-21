@@ -54,6 +54,8 @@ $pagTitle = "evaluador de RegularExp";
                 <?php
             }
             ?>
+                
+            <p>expr de php para mail: <?= FILTER_VALIDATE_EMAIL ?></p>
         </div>
     </div>
 </div>
